@@ -71,9 +71,9 @@ def sorting(directory):
     #видалення усіх пустих папок, що залишились
     delete_empty_folders(directory)
 def run():
-    if sys.argv[1]:
+    try:
         sorting(sys.argv[1])
-    else:
+    except IndexError:
         print("Directory was not provided")
 
 if __name__ == '__main__':
