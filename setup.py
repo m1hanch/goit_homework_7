@@ -7,4 +7,4 @@ setup(name='goit_homework_7',
       url='https://github.com/m1hanch',
       license='MIT',
       packages=find_packages(),
-      entry_points={'console_scripts':'hw7 = clean_folder.clean:sorting'})
+      entry_points={'console_scripts':'hw7 = clean_folder.clean:run'})

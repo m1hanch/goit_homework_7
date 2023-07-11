@@ -70,10 +70,11 @@ def sorting(directory):
     move_folders(directory)
     #видалення усіх пустих папок, що залишились
     delete_empty_folders(directory)
-
-
-if __name__ == '__main__':
+def run():
     if sys.argv[1]:
         sorting(sys.argv[1])
     else:
         print("Directory was not provided")
+
+if __name__ == '__main__':
+    run()
